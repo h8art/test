@@ -39,6 +39,8 @@ func StartApi() {
   router.GET("/shedule/:day", handlers.ListSheduleHandler)
   router.DELETE("/shedule/:id", handlers.DeleteSheduleHandler)
   router.PUT("/shedule", handlers.UpdSheduleHandler)
+  router.POST("/stats", handlers.AddStatHandler)
+  router.GET("/stats", handlers.ListStatsHandler)
   router.POST("/videos", handlers.UploadVideo)
   err := r.Run(":8083")
   if err != nil {

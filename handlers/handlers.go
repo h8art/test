@@ -117,3 +117,22 @@ func UpdVideoHandler(c *gin.Context)  {
   }
   c.JSON(200, vid)
 }
+
+func AddStatHandler(c *gin.Context) {
+  var req struct{
+    VID uint
+    Name string
+    Type string
+  }
+  err := c.BindJSON(&req)
+  if err != nil {
+    c.JSON(400, err)
+    return
+  }
+
+  health.AddStat(req.VID, req.Name, req.Type)
+}
+
+func ListStatsHandler(c *gin.Context) {
+  c.JSON(200, health.ListStats())
+}
