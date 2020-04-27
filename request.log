@@ -1,0 +1,11 @@
+[GIN-debug] GET    /api/v1/videos            --> health/handlers.GetVideosListHandler (5 handlers)
+[GIN-debug] DELETE /api/v1/videos/:id        --> health/handlers.DeleteVideoHandler (5 handlers)
+[GIN-debug] PUT    /api/v1/videos/:id        --> health/handlers.UpdVideoHandler (5 handlers)
+[GIN-debug] GET    /api/v1/videos/:id        --> health/handlers.ToggleVideoHandler (5 handlers)
+[GIN-debug] GET    /api/v1/shedule           --> health/handlers.GetSheduleHandler (5 handlers)
+[GIN-debug] POST   /api/v1/shedule/:day      --> health/handlers.AddSheduleHandler (5 handlers)
+[GIN-debug] GET    /api/v1/shedule/:day      --> health/handlers.ListSheduleHandler (5 handlers)
+[GIN-debug] DELETE /api/v1/shedule/:id       --> health/handlers.DeleteSheduleHandler (5 handlers)
+[GIN-debug] PUT    /api/v1/shedule           --> health/handlers.UpdSheduleHandler (5 handlers)
+[GIN-debug] POST   /api/v1/videos            --> health/handlers.UploadVideo (5 handlers)
+[GIN-debug] Listening and serving HTTP on :8083
